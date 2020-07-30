@@ -1,0 +1,560 @@
+[
+    {
+        "id": "a5605be8.bf5d18",
+        "type": "tab",
+        "label": "RGB Disco",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c6a5da8b.014288",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Color 255,0,0",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"brightness\":\"100\",\"rgb_color\":[255,0,0]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 700,
+        "y": 460,
+        "wires": [
+            [
+                "cad93ddd.cc63e"
+            ]
+        ]
+    },
+    {
+        "id": "d7b47a76.68cb78",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Color 0,255,0",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"brightness\":\"100\",\"rgb_color\":[0,255,0]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "d9ba6ff2.39477"
+            ]
+        ]
+    },
+    {
+        "id": "b50671e3.b226e",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Color 0,0,255",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"brightness\":\"100\",\"rgb_color\":[0,0,255]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 700,
+        "y": 380,
+        "wires": [
+            [
+                "9223bf68.67c0b"
+            ]
+        ]
+    },
+    {
+        "id": "d778d9d2.ed2cb8",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Color 255,255,0",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"brightness\":\"100\",\"rgb_color\":[255,255,0]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1080,
+        "y": 460,
+        "wires": [
+            [
+                "ad1339b6.11ae78"
+            ]
+        ]
+    },
+    {
+        "id": "903041f3.2b7cb",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Color 0,255,255",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"brightness\":\"100\",\"rgb_color\":[0,255,255]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1080,
+        "y": 300,
+        "wires": [
+            [
+                "bbea4e.1d9d15b"
+            ]
+        ]
+    },
+    {
+        "id": "de6bffc1.5496",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Color 255,0,255",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"brightness\":\"100\",\"rgb_color\":[255,0,255]}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1080,
+        "y": 380,
+        "wires": [
+            [
+                "b6310e0b.368d2"
+            ]
+        ]
+    },
+    {
+        "id": "ad1339b6.11ae78",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 280,
+        "y": 460,
+        "wires": [
+            [
+                "c8a2ec5b.55bbf"
+            ]
+        ]
+    },
+    {
+        "id": "d9ba6ff2.39477",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "750",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 890,
+        "y": 300,
+        "wires": [
+            [
+                "903041f3.2b7cb"
+            ]
+        ]
+    },
+    {
+        "id": "bbea4e.1d9d15b",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "b50671e3.b226e"
+            ]
+        ]
+    },
+    {
+        "id": "9223bf68.67c0b",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "750",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 890,
+        "y": 380,
+        "wires": [
+            [
+                "de6bffc1.5496"
+            ]
+        ]
+    },
+    {
+        "id": "b6310e0b.368d2",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 500,
+        "y": 460,
+        "wires": [
+            [
+                "c6a5da8b.014288"
+            ]
+        ]
+    },
+    {
+        "id": "cad93ddd.cc63e",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "750",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 890,
+        "y": 460,
+        "wires": [
+            [
+                "d778d9d2.ed2cb8"
+            ]
+        ]
+    },
+    {
+        "id": "67a51ca7.144f14",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "lightsoff",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_off",
+        "entityId": "RGB_light",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 740,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44acfb0f.880e34",
+        "type": "server-events",
+        "z": "a5605be8.bf5d18",
+        "name": "DiscoBulbs",
+        "server": "9326a579.a85e78",
+        "event_type": "call_service",
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "4928bb6a.0a9c54"
+            ]
+        ]
+    },
+    {
+        "id": "4928bb6a.0a9c54",
+        "type": "switch",
+        "z": "a5605be8.bf5d18",
+        "name": "Filter command",
+        "property": "payload.event.service",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1595957702843",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "f04a14d8.1380b8"
+            ]
+        ]
+    },
+    {
+        "id": "667e073.3ae8df8",
+        "type": "api-call-service",
+        "z": "a5605be8.bf5d18",
+        "name": "Light On White Off",
+        "server": "9326a579.a85e78",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "RGB_light",
+        "data": "{\"white_value\":\"0\"}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "d7b47a76.68cb78"
+            ]
+        ]
+    },
+    {
+        "id": "24ba1d63.0b1ce2",
+        "type": "inject",
+        "z": "a5605be8.bf5d18",
+        "name": "Test Button",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 520,
+        "y": 40,
+        "wires": [
+            [
+                "f04a14d8.1380b8"
+            ]
+        ]
+    },
+    {
+        "id": "f04a14d8.1380b8",
+        "type": "change",
+        "z": "a5605be8.bf5d18",
+        "name": "set command",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "5faf0971.97ea88"
+            ]
+        ]
+    },
+    {
+        "id": "c8a2ec5b.55bbf",
+        "type": "function",
+        "z": "a5605be8.bf5d18",
+        "name": "loop",
+        "func": "// Loop function\n// Top output provides triger for next actions\n// Botton output should be connected to the input through a dealy\n// The msg.payload can consis one of actions: start, stop\n// Other content is ignored\n// On the outoput the msg.payload contains current loop state\n\ncontext.loop = context.loop || \"stop\";\ncontext.loops = context.loops || 0;\n\n//console.log(\"topic :\" + msg.topic);\n//console.log(\"loop  :\" + context.loop);\n//console.log(\"loops :\" + context.loops);\n//console.log(\"action:\" + msg.payload);\n\nswitch (msg.payload) {\n\tcase \"stop\":\n\t\tcontext.loops = context.loops + 1;\n\t\tmsg.payload = \"stopped\";\n\t\tcontext.loop = \"stop\";\n\t\treturn [msg,null];\n\t\n\tcase \"start\":\n\t\tmsg.payload = \"started\";\n\t\tcontext.loop = \"loop\";\n\t\tcontext.loops = 1;\n\t\treturn [msg,msg];\n\tdefault:\n\t\tif (context.loop == \"loop\") {\n\t\t\tcontext.loops = context.loops + 1;\n\t\t\tmsg.payload = \"loop:\" + context.loops;\n\t\t\treturn [msg,msg];\n\t\t} else {\n\t\t\treturn [null,null]; \n\t\t}\n}",
+        "outputs": "2",
+        "noerr": 0,
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "67a51ca7.144f14",
+                "b50661ee.29452"
+            ],
+            [
+                "667e073.3ae8df8"
+            ]
+        ]
+    },
+    {
+        "id": "b50661ee.29452",
+        "type": "delay",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "67a51ca7.144f14"
+            ]
+        ]
+    },
+    {
+        "id": "5faf0971.97ea88",
+        "type": "toggle",
+        "z": "a5605be8.bf5d18",
+        "name": "",
+        "onOffTopic": "",
+        "onValue": "start",
+        "onType": "str",
+        "offValue": "stop",
+        "offType": "str",
+        "toggleTopic": "",
+        "toggleValue": "toggle",
+        "toggleType": "str",
+        "passOnOff": "",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "c8a2ec5b.55bbf"
+            ]
+        ]
+    },
+    {
+        "id": "9c07f4f0.7038e8",
+        "type": "comment",
+        "z": "a5605be8.bf5d18",
+        "name": "Watch for the script.  It will be unique.",
+        "info": "Here is where you set your script to trigger the switch.",
+        "x": 280,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "5b07eecc.cc30d",
+        "type": "comment",
+        "z": "a5605be8.bf5d18",
+        "name": "This will turn the lights off.",
+        "info": "",
+        "x": 830,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ff1552d3.ac76b",
+        "type": "comment",
+        "z": "a5605be8.bf5d18",
+        "name": "  A delay of the length of the loop plus one should make it stop correctly.",
+        "info": "",
+        "x": 910,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b0b630f3.f7312",
+        "type": "comment",
+        "z": "a5605be8.bf5d18",
+        "name": "Depending on your RGB you may need to turn the white off first.  After that trigger your color changes how you see fit.",
+        "info": "",
+        "x": 590,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "9326a579.a85e78",
+        "type": "server",
+        "z": "",
+        "name": "Home Assistant",
+        "legacy": false,
+        "addon": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true
+    }
+]
