@@ -11,7 +11,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Color 255,0,0",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -36,7 +36,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Color 0,255,0",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -61,7 +61,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Color 0,0,255",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -86,7 +86,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Color 255,255,0",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -111,7 +111,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Color 0,255,255",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -136,7 +136,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Color 255,0,255",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -299,7 +299,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "lightsoff",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -311,8 +311,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 740,
-        "y": 180,
+        "x": 800,
+        "y": 160,
         "wires": [
             []
         ]
@@ -322,7 +322,7 @@
         "type": "server-events",
         "z": "a5605be8.bf5d18",
         "name": "DiscoBulbs",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "event_type": "call_service",
         "exposeToHomeAssistant": false,
         "haConfig": [
@@ -373,7 +373,7 @@
         "type": "api-call-service",
         "z": "a5605be8.bf5d18",
         "name": "Light On White Off",
-        "server": "9326a579.a85e78",
+        "server": "55561fu9.a85e78",
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
@@ -452,8 +452,7 @@
         "y": 240,
         "wires": [
             [
-                "67a51ca7.144f14",
-                "b50661ee.29452"
+                "29aa4798.7fc518"
             ],
             [
                 "667e073.3ae8df8"
@@ -475,8 +474,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 520,
-        "y": 240,
+        "x": 660,
+        "y": 200,
         "wires": [
             [
                 "67a51ca7.144f14"
@@ -521,17 +520,17 @@
         "z": "a5605be8.bf5d18",
         "name": "This will turn the lights off.",
         "info": "",
-        "x": 830,
-        "y": 140,
+        "x": 850,
+        "y": 120,
         "wires": []
     },
     {
         "id": "ff1552d3.ac76b",
         "type": "comment",
         "z": "a5605be8.bf5d18",
-        "name": "  A delay of the length of the loop plus one should make it stop correctly.",
+        "name": "  A delay of the length of the loop plus about a second should make it stop correctly.",
         "info": "",
-        "x": 910,
+        "x": 760,
         "y": 240,
         "wires": []
     },
@@ -546,7 +545,33 @@
         "wires": []
     },
     {
-        "id": "9326a579.a85e78",
+        "id": "29aa4798.7fc518",
+        "type": "switch",
+        "z": "a5605be8.bf5d18",
+        "name": "Stop",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "stopped",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "b50661ee.29452",
+                "67a51ca7.144f14"
+            ]
+        ]
+    },
+    {
+        "id": "55561fu9.a85e78",
         "type": "server",
         "z": "",
         "name": "Home Assistant",
