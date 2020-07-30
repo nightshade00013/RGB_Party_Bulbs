@@ -1,5 +1,5 @@
 # RGB_Party_Bulbs
-This is a NodeRED flow that will allow you to have your RGB HomeAssistant lights shift colors on a loop until you turn it off the off function is the same script as is used to turn it on.
+This is a pair of NodeRED flows that will allow you to have your RGB HomeAssistant lights shift colors on a loop until you turn it off the off function is the same script as is used to turn it on.
 
 For those wondering how this will look and work check out the video here:  https://youtu.be/vAGbYbFNgC0
 
